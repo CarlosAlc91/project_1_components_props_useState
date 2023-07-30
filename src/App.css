@@ -1,1 +1,17 @@
 /* *style sheet for App components */
+
+.bg1 {
+  background-image: url('/images/bg1.png');
+}
+
+.bg2 {
+  background-image: url('/images/bg2.png');
+}
+
+.bg3 {
+  background-image: url('/images/bg3.png');
+}
+
+.bg4 {
+  background-image: url('/images/bg4.png');
+}

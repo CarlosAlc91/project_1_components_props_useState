@@ -8,6 +8,8 @@ import quotes from './db/quote.json'
 import { getRandom } from './utils/random'
 import QuotesBox from './components/QuotesBox'
 
+/* backgrouds array */
+const bgs = ['bg1', 'bg2', 'bg3', 'bg4']
 
 function App() {
 
@@ -19,17 +21,23 @@ function App() {
   */
   const [quote, setQuote] = useState(getRandom(quotes))
 
+  /* this state changes background when page chanrges */
+  /* adding bgs array since states reequires a readable array to read from */
+  const [currentBg, setCurrentBg] = useState(getRandom(bgs))
+
   /* we can pass info from father to son but not all the way around */
 
   /* this function will change quotes when the buttos is pressed */
   const handlerChangeQuote = () => {
     setQuote(getRandom(quotes))
+    /* adding setCurrentBg so backgrounds changes when button is clicked */
+    setCurrentBg(getRandom(bgs))
   }
 
-
   return (
-    <main>
+    <main className={`App ${currentBg}`}>
       <QuotesBox handlerChangeQuote={handlerChangeQuote} quote={quote} />
+
     </main>
   )
 }
