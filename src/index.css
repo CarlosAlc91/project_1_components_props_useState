@@ -1,1 +1,27 @@
 /* *Global styles and variables */
+
+/* *RESETTING PROPERTIES */
+
+html {
+  /* ? box-sizing: border-box always goes inside html  */
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}

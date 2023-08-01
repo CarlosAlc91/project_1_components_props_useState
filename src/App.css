@@ -1,5 +1,12 @@
 /* *style sheet for App components */
 
+.App {
+  /* main background goes full screen */
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+
 .bg1 {
   background-image: url('/images/bg1.png');
 }
