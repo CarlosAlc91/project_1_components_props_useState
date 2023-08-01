@@ -1,0 +1,97 @@
+.container {
+  display: grid;
+  position: relative;
+  /* section will display the ramining screen */
+  /* we're defining three rows:
+    grid-template-rows: auto button, 1fr quote, auto;
+    */
+  grid-template-rows: auto 1fr auto;
+
+  /* min container's height */
+  min-height: 100vh;
+
+  /* align-items and justify-content */
+  place-items: center;
+  /* min container's width, when reached 400px items will wrap */
+  width: min(100%, 400px);
+  padding: 20px 10px;
+  /* margin: top-bottom 0, left-right auto => this will fit left right margins */
+  margin: 0 auto;
+}
+
+
+.container__title {
+  text-align: center;
+  font-size: 50px;
+  color: #ffffff;
+  padding: 20px;
+  text-transform: uppercase;
+  /* -webkit-text-stroke: 3.5px #FFA645; */
+  text-shadow:
+    -4px -4px 0 #FFA645,
+    4px -4px 0 #FFA645,
+    -4px 4px 0 #FFA645,
+    4px 4px 0 #FFA645;
+  font-family: var(--font-title);
+  font-weight: bolder;
+}
+
+.quoteBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 10rem;
+}
+
+
+.btn {
+  display: grid;
+  place-items: center;
+  padding: 10px 10px 40px 10px;
+  border: none;
+  width: 100%;
+}
+
+.btn__try {
+  background-color: #FFA645;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px 30px;
+  width: 60%;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
+.phrases {
+  display: flex;
+  place-items: center;
+  background-color: white;
+  width: 100%;
+  padding: 10px 10px;
+  border: 2px solid #61DAFB;
+  border-radius: 10px 10px 0 10px;
+}
+
+.quotes {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin: 0;
+  padding: 10px 20px;
+  font-size: 20px;
+  color: #727272;
+}
+
+.footer {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin: 0;
+  border: 0;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 5px;
+  width: 60%;
+  color: #727272;
+}

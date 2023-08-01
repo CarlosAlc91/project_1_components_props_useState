@@ -1,19 +1,26 @@
+import './styles/QuoteBox.css'
+
 const QuotesBox = ({ handlerChangeQuote, quote }) => {
 
   console.log(quote)
   return (
 
-    <section>
+    <section className='container'>
       {/* titlte */}
-      <h1>Fortune cookies</h1>
+
+
+      <h1 className='container__title'>Fortune cookies</h1>
+
 
       {/* button and quotes card */}
-      <section>
+      <section className='quoteBox'>
         {/* button */}
-        <button onClick={handlerChangeQuote}>Try luck</button>
-        <article>
+        <div className='btn'>
+          <button className='btn btn__try' onClick={handlerChangeQuote}>Try luck</button>
+        </div>
+        <article className='phrases'>
           {/* quotes */}
-          <p>
+          <p className='quotes'>
             {quote.phrase}
           </p>
         </article>
@@ -21,9 +28,9 @@ const QuotesBox = ({ handlerChangeQuote, quote }) => {
       </section>
 
       {/* footer */}
-      <footer>
+      <footer className='footer'>
         {/* authors */}
-        <h4>Source: {quote.author}</h4>
+        <h4 className='footer__title'>Source: {quote.author}</h4>
       </footer>
 
     </section>

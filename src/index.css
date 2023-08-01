@@ -1,9 +1,37 @@
-/* *Global styles and variables */
+/* /* *Global styles and variables */
 
 /* *RESETTING PROPERTIES */
 
+:root {
+  --font-title: 'Fredoka', sans-serif;
+  --font-bold: 700;
+  --font-medium: 600;
+  --font-normal: 400;
+  --font-tiny: 300;
+}
+
+@media (min-width: 992px) {
+  :root {
+    --big-font: 2.5rem;
+    --medium-font: 2rem;
+    --normal-font: 1.25rem;
+    --small-font: 1rem;
+    --tiny-font: 0.8rem;
+  }
+}
+
+html,
+body {
+  height: 100%;
+}
+
 html {
-  /* ? box-sizing: border-box always goes inside html  */
+
+  font-size: 16px;
+  /* line spacing DO NOT USE px*/
+  /* line-height: 1.5; */
+  scroll-behavior: smooth;
+  /* alternative box mode */
   box-sizing: border-box;
 }
 
