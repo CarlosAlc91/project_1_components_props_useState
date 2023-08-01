@@ -1,6 +1,6 @@
 # Project 1 📃: 
 
-This is the first project from React module which consists on creating a rondomizer quotes/phrases generator.
+This is the first project from React module which consists on creating a rondomizer quotes/phrases generator using components, props, useState and CSS styles.
 
 
 We're using ⚙️:
