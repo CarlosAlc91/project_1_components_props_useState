@@ -62,11 +62,13 @@
   width: 60%;
   border-radius: 10px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .phrases {
   display: flex;
   place-items: center;
+  justify-content: center;
   background-color: white;
   width: 100%;
   padding: 10px 10px;
@@ -74,10 +76,7 @@
   border-radius: 10px 10px 0 10px;
 }
 
-.quotes {
-  display: flex;
-  text-align: center;
-  justify-content: center;
+.phrases__quotes {
   margin: 0;
   padding: 10px 20px;
   font-size: 20px;
@@ -88,10 +87,13 @@
   display: flex;
   text-align: center;
   justify-content: center;
-  margin: 0;
-  border: 0;
-  background-color: rgba(255, 255, 255, 0.6);
+  padding: 10px 20px;
+  width: 85%;
+}
+
+.footer__title {
+  width: 100%;
   padding: 5px;
-  width: 60%;
+  background-color: rgba(255, 255, 255, 0.6);
   color: #727272;
 }

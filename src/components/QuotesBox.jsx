@@ -20,7 +20,7 @@ const QuotesBox = ({ handlerChangeQuote, quote }) => {
         </div>
         <article className='phrases'>
           {/* quotes */}
-          <p className='quotes'>
+          <p className='phrases__quotes'>
             {quote.phrase}
           </p>
         </article>
