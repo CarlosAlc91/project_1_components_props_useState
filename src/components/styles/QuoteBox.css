@@ -68,7 +68,6 @@
 .phrases {
   display: flex;
   place-items: center;
-  justify-content: center;
   background-color: white;
   width: 100%;
   padding: 10px 10px;
@@ -85,8 +84,9 @@
 
 .footer {
   display: flex;
-  text-align: center;
+  align-items: center;
   justify-content: center;
+  text-align: center;
   padding: 10px 20px;
   width: 85%;
 }
