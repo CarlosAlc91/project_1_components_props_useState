@@ -1,8 +1,12 @@
-# React + Vite
+# Project 1 📃: 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the first project from React module which consists on creating a rondomizer quotes/phrases generator.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+We're using ⚙️:
+
+- [Vite](https://vitejs.dev/) for Frontend tooling.
+- [React](https://react.dev/) as main library.
+- [GitHub](https://github.com/) as version controler.
+- [Netlify](https://www.netlify.com/) as web hosting infrastructure.
+
